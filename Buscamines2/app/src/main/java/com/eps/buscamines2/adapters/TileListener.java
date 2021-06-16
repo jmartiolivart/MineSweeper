@@ -83,6 +83,7 @@ public class TileListener implements View.OnClickListener  {
                         ( (instance.getMS_countdown())?"\n"+ context.getString(R.string.chunk_remaining_time)+ getRemainingCount() : "" )
         );
         button.setClickable(false);
+        button.setLongClickable(false);
 
         instance.getGenerator().getNonCovered()[pos]=true;
         instance.undiscoveredTiles();

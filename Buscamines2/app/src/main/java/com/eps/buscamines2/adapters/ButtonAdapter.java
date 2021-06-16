@@ -19,12 +19,10 @@ public class ButtonAdapter extends BaseAdapter {
     private final MinesweeperFragment test_parameter;
     private Context mContext;
     private int size;
-    MSGeneratorMap generated;
 
     public ButtonAdapter(Context context, int size, MinesweeperEvents listener, MinesweeperFragment test_parameter) {
         this.mContext = context;
         this.size = size;
-       // this.generated = MinesweeperFragment.generator;
         this.listener = listener;
         this.test_parameter=test_parameter;
     }
@@ -54,8 +52,8 @@ public class ButtonAdapter extends BaseAdapter {
         } else {
             button = (Button) convertView;
         }
-        if (test_parameter.getGenerator().getNonCovered()[position]) {
 
+        if (test_parameter.getGenerator().getNonCovered()[position]) {
 
             button.setText(test_parameter.getGenerator().getBoard()[position]);
 
@@ -70,26 +68,16 @@ public class ButtonAdapter extends BaseAdapter {
             button.setBackgroundResource(R.drawable.shape);
             button.setOnClickListener(new TileListener(position, mContext, button, size, listener,test_parameter));
 
-            button.setOnLongClickListener(new View.OnLongClickListener() {
+            button.setOnLongClickListener(v -> {
 
-                private boolean flagged=false;
-
-                @Override
-                public boolean onLongClick(View v) {
+                if (button.getText() == "*"){
                     button.setText("");
-                    if (flagged){
-                        button.setText("*");
-                        button.setBackgroundResource(R.drawable.shape);
-                        flagged=false;
-                    }else{
-                        button.setBackgroundResource(R.drawable.littleflag);
-                        flagged=true;
-
-                    }
-                    button.setClickable(true);
-
-                    return true;
+                    button.setBackgroundResource(R.drawable.littleflag);
+                }else{
+                    button.setText("*");
+                    button.setBackgroundResource(R.drawable.shape);
                 }
+                return true;
             });
         }
 
