@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Buscamines</string>
+    <string name="help_button_text">Ajuda</string>
+    <string name="generic_text">
+        Benvinguts al BUSCA-MINES!!!!!!!!!!!!\n
+        \n El joc consisteix a buidar totes les caselles d\'una pantalla que no ocultin una mina.\n
+        Algunes caselles tenen un nombre, aquest nombre indica les mines que són en totes les caselles circumdants.\n
+        Així, si una casella té el número 3, vol dir que de les vuit caselles\n
+        que hi ha al voltant (si no és en una cantonada o vora) hi ha 3 amb mines i 5 sense mines.\n
+        Si es descobreix una casella sense nombre indica que cap de les caselles veïnes té mina i aquestes es descobreixen automàticament.\n
+        Si es descobreix una casella amb una mina es perd la partida.\n
+        Es pot posar una marca en les caselles que el jugador pensa que hi ha mines per ajudar a descobrir la qual són a prop.
+    </string>
+    <string name="main_button_text">Menu principal</string>
+    <string name="exit_button_text">Sortir del joc</string>
+    <string name="prestart_button_text">Començar joc</string>
+    <string name="game_button">Comença</string>
+    <string name="send_button_text">Envia</string>
+    <string name="restart_button_text">Nova Partida</string>
+    <string name="email_to_send_field_text">Enviar a ...</string>
+    <string name="log_field_text">Valors de Log</string>
+    <string name="time_send_text">Dia i hora</string>
+    <string name="email_chooser">Enviar correu ...</string>
+    <string name="email_chooser_error">No s\'ha trobat cap client de correu!</string>
+    <string name="helpPageTitle">Ajuda</string>
+    <string name="usermame_hint">Nom d\'usuari</string>
+    <string name="bomb_entropy_text">Percentatge de bombes</string>
+    <string name="time_control_text">Control de temps</string>
+    <string name="size_of_grid">Mida de la graella del joc</string>
+    <string name="error_username">Introdueix un nom d\'usuari</string>
+    <string name="off" translatable="false">OFF</string>
+    <string name="on" translatable="false">ON</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="countdown_text">"Queden: "</string>
+    <string name="crono_text">"Temps: "</string>
+    <!-- Logging Fragment Chunks Text  -->
+    <string name="username_log">"Àlies: "</string>
+    <string name="cells_log">"Caselles: "</string>
+    <string name="mines_entropy">"\% Mines: "</string>
+    <string name="time_boolean">"Control de temps: "</string>
+    <string name="mines_num">"Mines: "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="lost">Has perdut! Has trepitjat una mina</string>
+    <string name="infoMailSender">Escriu el un correu si vols compartir el teu resultat (de les dades següents):</string>
+    <string name="smallSize" translatable="false">5</string>
+    <string name="mediumSize" translatable="false">6</string>
+    <string name="bigSize" translatable="false">7</string>
+    <string name="bombDescripiton">Es una bomba</string>
+    <string name="imageGraella">graella</string>
+    <string name="smallPercentage" translatable="false">15%</string>
+    <string name="mediumPercentage" translatable="false">25%</string>
+    <string name="bigPercentage" translatable="false">35%</string>
+    <string name="imageClock">Clock Image</string>
+    <string name="chunk_selectedCell">Casella seleccionada:</string>
+    <string name="remaining_cells">"Caselles restants: "</string>
+    <string name="logging_string" >Registre de moviments</string>
+    <string name="chunk_remaining_time" >"Temps restant: "</string>
+    <string name="log_time_elapsed">"Temps total: "</string>
+    <string name="log_win_statement">Has guanyat!!!</string>
+    <string name="log_lose_statement" >Has Perdut :(</string>
+    <string name="log_losepoint_statement">"Bomba a la casella "</string>
+    <string name="log_remaining_chunk2" >" caselles per destapar "</string>
+    <string name="log_remaining_chunk1" >" t'han faltat "</string>
+
+</resources>
